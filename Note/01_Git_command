@@ -55,3 +55,5 @@ modified:   README.md (녹색)
 - git remote remove origin
 origin 제거
 
+- git push -u origin master (업로드)
+
