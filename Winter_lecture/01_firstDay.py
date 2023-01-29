@@ -1,19 +1,19 @@
 
-import copy
-a = ['김지혜', '곽다인', '김설화', '이영철', '조희령']
-b = copy.deepcopy(a)
-print(b, a)
-a[0] = '김인하'
-print(b, a)
-print(id(a), id(b))
-
-
+# import copy
 # a = ['김지혜', '곽다인', '김설화', '이영철', '조희령']
-# b = a
+# b = copy.deepcopy(a) #복사 + 새로운 공간을 쓰는 변수 생성
+# print(b, a)
+# a[0] = '김인하'
+# print(b, a)
+# print(id(a), id(b))
+#
+# a = ['김지혜', '곽다인', '김설화', '이영철', '조희령']
+# b = a #같은 공간을 쓰는 변수 생성
 # print(b, a)
 # a[0] = '김인하'
 # print(b)
 # print(id(a), id(b))
+
 
 # x = 99
 # y = x + 5
@@ -24,7 +24,7 @@ print(id(a), id(b))
 # 'univ' = 'inha'
 
 # type
-# print(type(2.7e-1))
+# print(type('ㅇ'))
 
 # countdown_list = [5, 4, 3, 2, 1, "hey!"]
 # countdown_list[2] = -99
