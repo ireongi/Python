@@ -34,7 +34,7 @@ Changes to be committed:
 modified:   README.md (녹색)
 
 
-- git commit -m "day02 second"
+- git commit -m "day02 second" (커밋하기)
 
 
 - git log (현재 커밋 상태 등을 확인)
