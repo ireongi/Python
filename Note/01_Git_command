@@ -72,3 +72,5 @@ origin 제거
 
 
 - git restore day03.py (수정된 내용에서 이전 커밋으로 복구 day03.py)
+
+- Q (git log 확인후 빠져나올때)
