@@ -60,3 +60,15 @@ origin 제거
 
 - git checkout "master"
     master 브랜치로 이동
+
+
+- git reset --soft 해시코드7자리 (커밋 취소)
+
+
+- git pull origin master (원격 리포지토리의 커밋이 로컬 리포지토리의 커밋보다 앞서 있을 때 로컬로 다운로드하고 log 업데이트)
+
+
+- git clone https://github.com/inhawinter/py.git . (원격 리포지토리를 복제 다운로드. 클론 명령에는 git init 그리고 git pull 등이 기본을 실행)
+
+
+- git restore day03.py (수정된 내용에서 이전 커밋으로 복구 day03.py)
