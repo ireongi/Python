@@ -65,7 +65,7 @@ origin 제거
 - git reset --soft 해시코드7자리 (커밋 취소)
 
 
-- git pull origin master (원격 리포지토리의 커밋이 로컬 리포지토리의 커밋보다 앞서 있을 때 로컬로 다운로드하고 log 업데이트)
+- git pull origin master (GitHub에서 수정 후 가져오기, 원격 리포지토리의 커밋이 로컬 리포지토리의 커밋보다 앞서 있을 때 로컬로 다운로드하고 log 업데이트)
 
 
 - git clone https://github.com/inhawinter/py.git . (원격 리포지토리를 복제 다운로드. 클론 명령에는 git init 그리고 git pull 등이 기본을 실행)
