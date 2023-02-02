@@ -1,22 +1,27 @@
-# pokemon ver02
+# pokemon game v0.4
+# getter setter -> property -> decorator
+# __hiddenfield
 
 class Pokemon:
     def __init__(self, owner, skills):
-        self.hidden_owner = owner
+        self.__hidden_owner = owner  # like private
         self.skills = skills.split('/')
         print(f"포켓몬 생성 :", end=' ')
 
-    def get_owner(self):
-        return self.hidden_owner
-    def set_owner(self, owner):
-        self.hidden_owner
+    @property
+    def owner(self):
+        return self.__hidden_owner
+
+    @owner.setter
+    def owner(self, owner):
+        self.__hidden_owner = owner
 
     def info(self):
         print(f"{self.owner}의 포켓몬이 사용 가능한 스킬")
         for i in range(len(self.skills)):
             print(f'{i+1} : {self.skills[i]}')
 
-    owner = property(get_owner, set_owner) #property를 사용해 getter setter 만들기
+    #owner = property(get_owner, set_owner)
         # for skill in self.skills:
         #     print(f'{skill}')
 
@@ -54,7 +59,7 @@ class Pairi(Pokemon):  # inheritance
         print(f"{self.name}")
 
     def attack(self, idx):  # override
-        print(f'{self.get_owner}의 {self.name}가 {self.skills[idx]} 공격(불) 시전!')
+        print(f'{self.owner}의 {self.name}가 {self.skills[idx]} 공격(불) 시전!')
 
 
 while True:
@@ -64,17 +69,15 @@ while True:
         break
     elif menu == '1':
         pokemon = input('1) 피카츄  2) 꼬부기  3) 파이리 : ')
+        n = input('플레이어 이름 입력 : ')
+        s = input('사용 가능한 기술 입력(/로 구분하여 입력) :')
         if pokemon == '1':
-            n = input('플레이어 이름 입력 : ')
-            s = input('사용 가능한 기술 입력(/로 구분하여 입력) :')
             p = Pikachu(n, s)
+            # p.owner = "한지우"  # setter
+            # p.__hidden_owner = "한지우"  # 허가되지 않은 접근
         elif pokemon == '2':
-            n = input('플레이어 이름 입력 : ')
-            s = input('사용 가능한 기술 입력(/로 구분하여 입력) :')
             p = Ggoboogi(n, s)
         elif pokemon == '3':
-            n = input('플레이어 이름 입력 : ')
-            s = input('사용 가능한 기술 입력(/로 구분하여 입력) :')
             p = Pairi(n, s)
         else:
             print('메뉴에서 골라 주세요')
