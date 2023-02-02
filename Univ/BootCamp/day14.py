@@ -12,10 +12,11 @@ class Pokemon:
         self.hidden_owner
 
     def info(self):
-        print(f"{self.get_owner}의 포켓몬이 사용 가능한 스킬")
+        print(f"{self.owner}의 포켓몬이 사용 가능한 스킬")
         for i in range(len(self.skills)):
             print(f'{i+1} : {self.skills[i]}')
 
+    owner = property(get_owner, set_owner) #property를 사용해 getter setter 만들기
         # for skill in self.skills:
         #     print(f'{skill}')
 
@@ -30,7 +31,7 @@ class Pikachu(Pokemon):  # inheritance
         print(f"{self.name}")
 
     def attack(self, idx):  # override
-        print(f'{self.get_owner}의 {self.name}가 {self.skills[idx]} 공격(전기) 시전!')
+        print(f'{self.owner}의 {self.name}가 {self.skills[idx]} 공격(전기) 시전!')
 
 
 class Ggoboogi(Pokemon):  # inheritance
@@ -40,7 +41,7 @@ class Ggoboogi(Pokemon):  # inheritance
         print(f"{self.name}")
 
     def attack(self, idx):  # override
-        print(f'{self.get_owner}의 {self.name}가 {self.skills[idx]} 공격(물) 시전!')
+        print(f'{self.owner}의 {self.name}가 {self.skills[idx]} 공격(물) 시전!')
 
     def swim(self):
         print(f'{self.name}가 수영을 합니다')
