@@ -9,4 +9,4 @@ elif shortcut == 2:
 elif shortcut == 3:
     print("동생 : 010-1234-0000")
 else:
-    print("해당 단축키가 없습니다.")
+    print("단축키가 없습니다.")

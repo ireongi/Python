@@ -1,10 +1,10 @@
 # 정수형 변수 사용하기
 
-value = 100
-print(value)
+val = 100
+print(val)
 
-value = value + 100
-print(value)
+val = val + 100
+print(val)
 
-value = 'Hello'
-print(value)
+val = 'Hello'
+print(val)

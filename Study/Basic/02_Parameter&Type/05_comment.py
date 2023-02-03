@@ -6,24 +6,24 @@ remark : 파이썬 기반 주석 처리 테스트 코드입니다.
 """
 
 # Using Comment - One Line
-fruit1 = '수박 '
-fruit2 = '포도 '
-fruit3 = '키위 '
-myFavorite = ' '
+fruit1 = '참외 '
+fruit2 = '사과 '
+fruit3 = '포도 '
+myFavoriteFruit = ' '
 
-myFavorite += fruit1
-myFavorite += fruit2
+myFavoriteFruit += fruit1
+myFavoriteFruit += fruit2
 #myFavorit += fruit3
-print('내가 좋아하는 과일은: ' + myFavorite + '입니다')
+print('내가 좋아하는 과일은: ' + myFavoriteFruit + '입니다')
 
 # Using Comment - Several Line
-fruit1 = '수박 '
-fruit2 = '포도 '
-fruit3 = '키위 '
-myFavorite = ' '
+fruit1 = '체리 '
+fruit2 = '복숭아 '
+fruit3 = '샤인머스캣 '
+myFavoriteFruit = ' '
 '''
 myFavorite += fruit1
 myFavorite += fruit2
 myFavorite += fruit3
 '''
-print('내가 좋아하는 과일은: ' + myFavorite + '입니다')
+print('내가 좋아하는 과일은: ' + myFavoriteFruit + '입니다')

@@ -1,12 +1,12 @@
 # Type Casting - Convert to Integer
-print(int('100'))
+print(int('10'))
 print(int(3.123))
-print(int('100')+int(3.123))
+print(int('10')+int(3.123))
 
 # Type Casting - Convert to String
-print(str(100))
+print(str(10))
 print(str(3.14))
-print(str(100)+str(3.14))
+print(str(10)+str(3.14))
 
 # Correct Output
 strNum1 = input('첫 번째 숫자를 입력하세요: ')

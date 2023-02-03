@@ -1,16 +1,16 @@
 # if~elif~else4
 
-point = int(input("점수를 입력하세요 : "))
+point = int(input("점수를 입력 : "))
 
 if point <= 100 and point > 90 :
-    print('학점 : A')
+    print('A')
 elif point <= 90 and point > 80 :
-    print('학점 : B')
+    print('B')
 elif point <= 80 and point > 70:
-    print('학점 : C')
+    print('C')
 elif point <= 70 and point > 60:
-    print('학점 : D')
+    print('D')
 elif point <= 60 and point > 0:
-    print('학점 : F')
+    print('F')
 else:
-    print("입력값이 잘못되어있습니다.")
+    print("error")
