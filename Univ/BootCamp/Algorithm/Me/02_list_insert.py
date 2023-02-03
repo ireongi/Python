@@ -1,4 +1,4 @@
-
+# insert 내부구조 구조
 
 def insert_data(index, pokemon):
     if index < 0 or index > len(pokemons):
@@ -22,3 +22,5 @@ if __name__ == "__main__" :
     print(pokemons)
     insert_data(6, '어니부기') # 19행 실행 후 6번방에 값 넣기 가능
     print(pokemons)
+    # pokemons.insert(6, '어니부기') 빌트인 기능 사용
+
