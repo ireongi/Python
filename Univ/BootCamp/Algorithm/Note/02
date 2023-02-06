@@ -1,0 +1,14 @@
+2/6(월) Stack
+
+- 스택 : fisrt in, last out
+        삽입(push) 추출(pop) 가장 위 데이터_변수(top), 스택의 size
+
+- 생성 : list complation으로 스택 생성 가능
+    stack = [None, None, None, None]
+
+- 삽입(Push) : 해당 방에 데이터 삽입
+    stack[top] = "~"
+
+- 추출(pop) : 맨 위 값 추출
+
+- 맨 위 값(top) : 가장 위 데이터
