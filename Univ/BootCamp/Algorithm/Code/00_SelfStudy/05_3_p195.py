@@ -1,7 +1,7 @@
 # p195 응용 예제1
 # 현 위치(0,0) 편의점 10곳 위치_튜플(x,y) x, y 값 랜덤하게 1~100까지
 # 현 위치에서 편의점까지의 거리는 제곱근의 더하기로 계산(x^x + y^y)
-
+import math
 # 설계
 # 1. 현 위치 설정 / 2. 편의점 10곳 위치 랜덤 생성 & 튜플로 받기 / 3. 현 위치와 편의점 거리 계산 함수 생성 / 4. 거리에 따른 원형 리스트 생성
 import random
@@ -15,12 +15,14 @@ class Node:
 
 def print_node(start):
     current = start
-    if current.link == None:
+    if current == None:
         return
     print(current.data, end=' ')
-    while current.link != start:
+
+    while current.link != head:
         current = current.link
-        print(current.data, end=' ')
+        x, y = current.data[1:]
+        print(current.data[0], '마트까지:', math.sqrt(x*x + y*y))
     print()
 
 
@@ -31,7 +33,7 @@ def sort_mart():
                 mart_distance[i] = mart_distance[k]
 
 
-def random_mart():
+def make_mart_list():
     for _ in range(10):
         x = random.randint(1, 100)
         y = random.randint(1, 100)
@@ -50,7 +52,7 @@ mart_location = []
 mart_distance = []
 
 if __name__ == "__main__":
-    random_mart()
+    make_mart_list()
     how_far_mart()
     print(mart_location)
     print(mart_distance)

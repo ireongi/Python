@@ -1,0 +1,37 @@
+2/7(화) Queue
+
+- first in, first out
+- 삽입(enQueue), 추출(deQueue), 첫 번째 데이터(front), 마지막 데이터(rear)
+- 삽입할때 front는 변하지 않음
+- 추출시 추출된 자리를 front로 지정해 None 처리함
+- front 자리에는 None 값만 & rear 자리에는 Data 값만
+
+- 원형 큐 : 반복문을 제거해 공간이 클때의 오버헤드를 줄임
+          (선형은 빈 공간이 생기면 계속 데이터를 이동시키기 때문, 시간 복잡도가 다르다)
+          한 자리 남기고 사용하기(꽉 찼는지 확인할 때 필요, 데이터 클수록 유리함)
+
+
+- 데이터 작은면 선형 큐, 크면 원형 큐 사용하기 유리
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+Binary Tree
+
+- Root(부모)-Sub(자식) 관계로 이어져 있음
+- degree(차수, 자식 노드의 개수), leaf(차수가 없는 노드)
+- 노드 순서는 맨 위부터 아래로 & 왼쪽에서 오른쪽으로 번호 부여
+        1
+    2       3
+  4   5   6   7
+
+- binary tree 종류
+  1) full 포화 : 한 줄의 모든 노드가 차수를 가짐 (leaf 제외)
+  2) complete 완전 : 한 줄(왼쪽부터 오른쪽)의 끝 노드는 차수가 없어야함
+  3) skewed 편향 : 차수가 1개씩만 있음
+  4) binary tree : 1)~3)에 해당 x & 중간에 노드 빠져있는 경우
+
+- traversal 순회
+  1) preorder  전위 : (current) - left - right   : (current)1 - (left)2 4 - (right)5 - up - (left)3 6 - (right)7
+  2) inorder   중위 : left - (current) - right   : (left)4 - up 2 - 5 - up (current)1 - (right)6 - up 3
+  3) postorder 후위 : left - right - (current)   : (left)4 5 2 - (right)6 3 - (current)1
+
+
