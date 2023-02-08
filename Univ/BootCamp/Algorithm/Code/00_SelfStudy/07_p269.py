@@ -1,8 +1,8 @@
 def is_queue_full():
     global SIZE, queue, front, rear
-    if rear == SIZE-1:
+    if rear == SIZE-1 and front == -1:
         return True
-    elif rear != SIZE-1 and front == -1:
+    elif rear != SIZE-1 and front != -1:
         return False
 
 
