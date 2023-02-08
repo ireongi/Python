@@ -11,19 +11,15 @@ class Graph():
 ## 전역 변수 선언 부분 ##
 G1 = None
 #queue = []
-queue = deque([])
+queue = deque([])  # deque as queue
 visited_array = []  # 방문한 정점
 
 ## 메인 코드 부분 ##
 G1 = Graph(4)
-G1.graph[0][2] = 1;
-G1.graph[0][3] = 1
+G1.graph[0][2] = 1; G1.graph[0][3] = 1
 G1.graph[1][2] = 1
-G1.graph[2][0] = 1;
-G1.graph[2][1] = 1;
-G1.graph[2][3] = 1
-G1.graph[3][0] = 1;
-G1.graph[3][2] = 1
+G1.graph[2][0] = 1; G1.graph[2][1] = 1; G1.graph[2][3] = 1
+G1.graph[3][0] = 1; G1.graph[3][2] = 1
 
 print('-- None Direction Graph --')
 for row in range(4):
