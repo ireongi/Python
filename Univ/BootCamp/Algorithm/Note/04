@@ -47,3 +47,10 @@
   5) 너비 우선 탐색(Queue)
 
 
+
+  6) deque
+     양방향 입출구를 가짐 / stack과 queue를 일반화한 것
+     데크의 양쪽 끝에서 append와 pop을 양쪽에서 리스트와 같은 성능으로 지원
+     메모리 오버헤드를 줄임 / 성능 향상
+     오른쪽에 붙임 append(x)  /  왼쪽에 붙임 appendleft(x) (pop도 같은 맥락)
+
