@@ -1,4 +1,4 @@
-## 클래스 및 함수 선언 부분 ##
+## Kruskal Algorithm ##
 class Graph():
     def __init__(self, size):
         self.SIZE = size

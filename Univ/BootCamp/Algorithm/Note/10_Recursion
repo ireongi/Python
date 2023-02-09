@@ -1,0 +1,12 @@
+2/9(목) Recursion
+
+
+- 같은 패턴이 반복될 떄 사용
+- 느리지만 반복문 제거, 가독성 좋음
+- stack
+
+fibonacci
+
+memoization
+
+palindrome
