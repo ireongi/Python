@@ -14,7 +14,7 @@ visited_array = []  # 방문한 정점
 G1 = Graph(9)
 G1.graph[0][1] = 1; G1.graph[0][2] = 1; G1.graph[0][4] = 1  # BCE
 G1.graph[1][0] = 1; G1.graph[1][2] = 1; G1.graph[1][3] = 1  # ACD
-G1.graph[2][0] = 1; G1.graph[2][1] = 1; G1.graph[2][3] = 1; G1.graph[2][4] = 1; G1.graph[0][1] = 1
+G1.graph[2][0] = 1; G1.graph[2][1] = 1; G1.graph[2][3] = 1; G1.graph[2][4] = 1; G1.graph[2][5] = 1;
 G1.graph[3][1] = 1; G1.graph[3][2] = 1
 G1.graph[4][0] = 1; G1.graph[4][2] = 1; G1.graph[4][6] = 1; G1.graph[4][7] = 1
 G1.graph[5][2] = 1  # f가 없음

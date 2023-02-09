@@ -57,7 +57,7 @@ a, b, c, d, e, f = 0, 1, 2, 3, 4, 5
 ## 메인 코드 부분 ##
 gSize = 6
 G1 = Graph(gSize)
-G1.graph[a][b] = 10; G1.graph[a][c] = 15
+G1.graph[a][b] = 10; G1.graph[a][c] = 15;
 G1.graph[b][a] = 10; G1.graph[b][c] = 40; G1.graph[b][d] = 11; G1.graph[b][e] = 50
 G1.graph[c][a] = 15; G1.graph[c][b] = 40; G1.graph[c][d] = 12
 G1.graph[d][b] = 11; G1.graph[d][c] = 12; G1.graph[d][e] = 20; G1.graph[d][f] = 30
