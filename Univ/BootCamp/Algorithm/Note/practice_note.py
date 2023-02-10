@@ -45,7 +45,7 @@ pokemons = [
 ]
 
 a = dict(pokemons)
-print(a)
+print(len(a))
 
 print(list(a.keys()))
 
