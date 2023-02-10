@@ -63,23 +63,13 @@ if __name__ == "__main__":
     for i in range(0, len(pokemons)):
         a = pokemons[i]
         counts[a.owner] = 0
-
-    for pokemon in pokemons:
-        po = pokemon.owner
-        pn = pokemon.name
-        if po == '한지우':
-            counts['한지우'] += 1
-        elif po == '오바람':
-            counts['오바람'] += 1
-        elif po == '나이기':
-            counts['나이기'] += 1
-        elif po == '덴트':
-            counts['덴트'] += 1
-        elif po == '아이리스':
-            counts['아이리스'] += 1
-
-    po_owner = list(counts.keys())
-    po_name = list(counts.values())
+    for i in range(0, len(pokemons)):
+        po = pokemons[i]
+        for pokemon in pokemons:
+            if po.owner == pokemon.owner:
+                counts[po.owner] += 1
+    owner_list = list(counts.keys())
+    name_list = list(counts.values())
 
     for pokemon in pokemons:
         print(f'{pokemon.name}의 주인은 {pokemon.owner}입니다.')
@@ -92,10 +82,10 @@ if __name__ == "__main__":
     print(hp)
 
     print("===정렬 전===")
-    for i in range(0, len(po_owner)):
-        print(f'{po_owner[i]} 소유 포켓몬은 총 {counts[po_owner[i]]}마리 입니다.')
+    for i in range(0, len(owner_list)):
+        print(f'{owner_list[i]} 소유 포켓몬은 총 {counts[owner_list[i]]}마리 입니다.')
 
-    my_sort(po_name, po_owner, 0, len(counts) - 1)
+    my_sort(name_list, owner_list, 0, len(counts) - 1)
     print("===정렬 후===")
-    for i in range(0, len(po_owner)):
-        print(f'{po_owner[i]} 소유 포켓몬은 총 {counts[po_owner[i]]}마리 입니다.')
+    for i in range(0, len(owner_list)):
+        print(f'{owner_list[i]} 소유 포켓몬은 총 {counts[owner_list[i]]}마리 입니다.')
