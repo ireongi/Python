@@ -11,10 +11,10 @@ def quick_sort(array):
     left_array, right_array = [], []
 
     for num in array:
-        if num > pivot:
+        if num < pivot:
             left_array.append(num)
             count += 1
-        elif num < pivot:
+        elif num > pivot:
             right_array.append(num)
             count += 1
 
@@ -22,7 +22,7 @@ def quick_sort(array):
 
 
 ## 전역 변수 선언 부분 ##
-data_array = [random.randint(0, 100) for _ in range(5)]
+data_array = [random.randint(0, 100) for _ in range(9)]
 count = 0
 
 ## 메인 코드 부분 ##

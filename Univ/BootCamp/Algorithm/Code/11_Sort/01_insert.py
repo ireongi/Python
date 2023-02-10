@@ -14,7 +14,7 @@ def find_insert_index(ary, data):
 
 
 ## 전역 변수 선언 부분 ##
-before = [random.randint(0,200) for _ in range(10)]
+before = [random.randint(0, 200) for _ in range(10)]
 after = []
 
 ## 메인 코드 부분 ##
